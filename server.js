@@ -1,8 +1,7 @@
 const http = require("http");
 const app = require("./app.js");
 const mongoose = require("mongoose");
-const { ATLAS_PASSWORD, ATLAS_USERNAME } = process.env
-const MONGO_URL = `mongodb+srv://${ATLAS_USERNAME}:${ATLAS_PASSWORD}@cluster0.liy2xar.mongodb.net/?retryWrites=true&w=majority`;
+const MONGO_URL = `mongodb+srv://${process.env.ATLAS_USERNAME}:${process.env.ATLAS_PASSWORD}@cluster0.liy2xar.mongodb.net/?retryWrites=true&w=majority`;
 
 
 
